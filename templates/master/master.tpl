@@ -13,8 +13,7 @@
         {include file=$header}
     </header>
     <section>
-        {*include file=$content*}
-        {$content}
+        {include file=$content}
     </section>
     <footer>
         {include file=$footer}
