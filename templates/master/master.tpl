@@ -4,8 +4,14 @@
     <meta charset='utf-8'>
 </head>
 <body>
-    <p>
-        {$message}
-    </p>
+    <header>
+        {include file=$header}
+    </header>
+    <section>
+        {include file=$content}
+    </section>
+    <footer>
+        {include file=$footer}
+    </footer>
 </body>
 </html>
