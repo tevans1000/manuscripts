@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head lang='en'>
-    <meta charset='utf-8'>
-</head>
-<body>
-    <p>
-        Hello, world!
-    </p>
-</body>
-</html>
+<?php
+
+require 'templates/smarty-3.1.28/libs/Smarty.class.php';
+
+$smarty = new Smarty();
+
+$smarty->assign('message','Hello, view!');
+
+$smarty->display('master/master.tpl');
+
+?>
