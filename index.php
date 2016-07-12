@@ -9,7 +9,7 @@ $smarty->assign('header','master/header.html');
 $smarty->assign('footer','master/footer.html');
 $smarty->assign('content','homepage.tpl');
 // query database and assign result for use by homepage.tpl
-$queryfile = '../getmanuscripts.sql';
+$queryfile = 'getmanuscripts.sql';
 include 'query.php';
 $smarty -> assign('result',$result);
 
