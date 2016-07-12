@@ -8,10 +8,12 @@ $smarty = new Smarty();
 $smarty->assign('header','master/header.html');
 $smarty->assign('footer','master/footer.html');
 $smarty->assign('content','homepage.tpl');
-// assign variables expected by homepage.tpl
-include '../get-manuscripts.php';
+// query database and assign result for use by homepage.tpl
+$queryfile = '../getmanuscripts.sql';
+include 'query.php';
 $smarty -> assign('result',$result);
 
+// display
 $smarty->display('master/master.tpl');
 
 ?>
